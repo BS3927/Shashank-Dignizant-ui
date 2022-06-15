@@ -77,3 +77,32 @@ export const Select = (props) => {
         </div>
     )
 }
+
+export const TextBox=(props)=>{
+    const {obj,fnChange} =props
+   const {lbl,type,name,value,errorMsg,isShowError,isDisabled}=obj
+   return <div className='row mb-3'>
+        <div className='col-sm-5 text-end'>
+                <b>{lbl}:</b>
+        </div>
+        <div className='col-sm-3'>
+            <input disabled={isDisabled} onChange={fnChange} className='form-control' value={value} type={type} name={name}  />
+        </div>
+        <div className='col-sm-4 text-start'>
+            {isShowError && <b className='text-danger'>{errorMsg}</b>}
+        </div>
+   </div>
+}
+
+export const Items = (props) => {
+    
+    return (
+      <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
+        <>
+          <div className="card p-0 overflow-hidden h-100 shadow">
+            
+          </div>
+        </>
+      </div>
+    );
+}

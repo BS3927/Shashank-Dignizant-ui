@@ -3,6 +3,6 @@ import './header.css'
 
 export const Header = () => {
   return (
-    <div className='header text-center bg-primary text-white'>Postal App</div>
+    <div className='header text-center bg-primary text-white'>Google Form Clone</div>
   )
 }
